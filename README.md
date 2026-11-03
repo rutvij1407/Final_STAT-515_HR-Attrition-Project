@@ -24,10 +24,10 @@ The IBM HR Analytics Employee Attrition and Performance dataset: 1,470 employees
 
 **Key findings**
 
-* Overtime is a strong signal: 30.5 percent of overtime workers left, against 10.4 percent of the others.
-* Sales Representatives had the highest attrition at 39.8 percent.
-* Frequent travellers left at 24.9 percent, against 8.0 percent for rare travellers.
-* On discrimination, the Random Forest reached an AUC of 0.777 and the Decision Tree 0.685.
+* Overtime is the dominant driver. 30.5 percent of overtime workers left, against 10.4 percent of the others, a relative risk of 2.9. It ranked first or highest in the decision tree, random forest, LASSO and gradient boosting models.
+* Career stagnation compounds. Each year without a promotion raises the odds of leaving by about 15 percent, reaching roughly 77 percent higher at four years.
+* Satisfaction matters differently by department. R&D shows strong links between all three satisfaction scores and staying, Sales shows selective effects, and HR is too small for reliable conclusions.
+* Model results on held out data, by AUC: LASSO logistic regression 0.803 (the best), gradient boosting 0.783, random forest 0.672 and weighted logistic regression 0.665.
 
 **Repository layout**
 
